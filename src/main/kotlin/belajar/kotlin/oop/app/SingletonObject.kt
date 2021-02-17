@@ -9,4 +9,10 @@ fun main() {
 
     println(Application.Companion.toUpper("Ahmad"))
     println(Application.toUpper("Ahmad"))
+
+    a()
+}
+
+fun a() {
+    println(Utilities.name)
 }
