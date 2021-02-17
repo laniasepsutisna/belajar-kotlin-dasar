@@ -2,7 +2,7 @@ package belajar.kotlin.oop.data
 
 class Application {
 
-    object Utilities {
+    companion object {
         fun toUpper(value: String): String{
             return value.toUpperCase()
         }

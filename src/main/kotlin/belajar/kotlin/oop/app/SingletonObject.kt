@@ -7,5 +7,6 @@ fun main() {
     println(Utilities.name)
     println(Utilities.toUpper("Asep"))
 
-    println(Application.Utilities.toUpper("Ahmad"))
+    println(Application.Companion.toUpper("Ahmad"))
+    println(Application.toUpper("Ahmad"))
 }
