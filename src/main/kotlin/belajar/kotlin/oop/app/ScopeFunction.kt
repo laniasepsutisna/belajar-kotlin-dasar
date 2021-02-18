@@ -1,0 +1,31 @@
+package belajar.kotlin.oop.app
+
+import belajar.kotlin.oop.data.Student
+
+fun main() {
+    val student = Student("Asep", 23)
+    val result1: String = student.let{
+        "Name ${it.name}, Age ${it.age}"
+    }
+    println(result1)
+
+    val result2: String = student.run{
+        "Name ${this.name}, Age ${this.age}"
+    }
+    println(result2)
+
+    val result3: Student = student.apply {
+        "Name ${this.name}, Age ${this.age}"
+    }
+    println(result3)
+
+    val result4: Student = student.also {
+        "Name ${it.name}, Age ${it.age}"
+    }
+    println(result4)
+
+    val result5: String = with(student){
+        "Name ${this.name}, Age ${this.age}"
+    }
+    println(result5)
+}
